@@ -1,0 +1,23 @@
+.novafw-likes {
+	background: url(../images/heart.png) no-repeat 0 49%;
+	border: 0 !important;
+	display: inline-block;
+	margin-bottom: 10px;
+	min-height: 14px;
+	padding-left: 18px;
+	text-decoration: none;
+}
+.novafw-likes:hover,
+.novafw-likes.active {
+	background: url(../images/heart_active.png) no-repeat 0 49%;
+	border: 0 !important;
+	margin: 0 0 10px 0 !important;
+	padding-left: 18px !important;
+	text-decoration: none;
+}
+
+.novafw-blog-widget .novafw-likes,
+.tz_recentwork_widget .novafw-likes,
+.tz_blog_widget .novafw-likes,
+.home div#the_body #slider .excerpt .novafw-likes,
+.archive div#the_body #slider .excerpt .novafw-likes { display: none; } /* Hide novafw Share in custom post widget and sliders in themes */
