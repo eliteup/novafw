@@ -44,14 +44,3 @@ require_once( NOVAFW_FRAMEWORK_PATH . 'novafw_functions.php' );
  * Let's include all of that now.
  */
 require_once( NOVAFW_FRAMEWORK_PATH . 'init.php' );
-
-/**
- * Plugin Updates
- * This plugin updates from wp-updates.com
- * I've tried various github updaters, but they all seem to break very simply, this should be quite reliable.
- * 
- * @author DzungNova
- * @since v1.0.0
- */
-require_once(NOVAFW_FRAMEWORK_PATH . 'wp-updates-plugin.php');
-new WPUpdatesPluginUpdater_745( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
