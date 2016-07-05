@@ -18,6 +18,7 @@ $defaults = array(
 	'likes'                 => '0',
 	'options'               => '0',
 	'metaboxes'             => '0',
+	'woocomposer'           => '0',
 	'thebear_widgets'       => '0',
 	'thebear_shortcodes'    => '0'
 );
@@ -62,7 +63,12 @@ if( '1' == $framework_options['thebear_shortcodes'] ){
 if( '1' == $framework_options['thebear_widgets'] ){
 	require_once( NOVAFW_FRAMEWORK_PATH . 'widgets/thebear-widgets.php' );
 }
-
+/**
+ * Register Woocomposer class
+ */
+if( '1' == $framework_options['woocomposer'] ){
+	require_once( NOVAFW_FRAMEWORK_PATH . 'woocomposer/woocomposer.php' );
+}
 /**
  * Register Portfolio Post Type
  */
