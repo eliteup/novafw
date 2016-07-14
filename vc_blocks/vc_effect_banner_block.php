@@ -12,7 +12,7 @@ function novafw_effect_banner_shortcode( $atts, $content = null ) {
 				'margin_bottom' => '30',
 				'layout' => 'standard',
 				'link' => '',
-				'target' => ''
+				'target' => '_self'
 			), $atts 
 		) 
 	);
