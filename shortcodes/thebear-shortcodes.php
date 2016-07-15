@@ -142,21 +142,25 @@ if(!( function_exists('novafw_thebear__socials') )) {
 
 	add_shortcode("thebear_socials", "novafw_thebear_socials");
 }
-if(!( function_exists('novafw_icons_settings_field') )){
-	function novafw_icons_settings_field( $settings, $value ) {
+if (class_exists('WPBakeryVisualComposerAbstract')) {
+	if (!(function_exists('novafw_icons_settings_field'))) {
+		function novafw_icons_settings_field($settings, $value)
+		{
 
-		$icons = $settings['value'];
+			$icons = $settings['value'];
 
-		$output = '<a href="#" id="novafw-icon-toggle" class="button button-primary button-large">Show/Hide Icons</a><div class="novafw-icons"><div class="novafw-icons-wrapper">';
-		foreach( $icons as $icon ){
-			$active = ( $value == $icon) ? ' active' : '';
-			$output .= '<i class="icon '. $icon . $active .'" data-icon-class="'. $icon .'"></i>';
+			$output = '<a href="#" id="novafw-icon-toggle" class="button button-primary button-large">Show/Hide Icons</a><div class="novafw-icons"><div class="novafw-icons-wrapper">';
+			foreach ($icons as $icon) {
+				$active = ($value == $icon) ? ' active' : '';
+				$output .= '<i class="icon ' . $icon . $active . '" data-icon-class="' . $icon . '"></i>';
+			}
+			$output .= '</div><input name="' . esc_attr($settings['param_name']) . '" class="wpb_vc_param_value wpb-textinput novafw-icon-value ' .
+				esc_attr($settings['param_name']) . ' ' .
+				esc_attr($settings['type']) . '_field" type="text" value="' . esc_attr($value) . '" />' . '</div>';
+
+			return $output;
 		}
-		$output .= '</div><input name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput novafw-icon-value ' .
-			esc_attr( $settings['param_name'] ) . ' ' .
-			esc_attr( $settings['type'] ) . '_field" type="text" value="' . esc_attr( $value ) . '" />' . '</div>';
 
-		return $output;
+		vc_add_shortcode_param('novafw_icons', 'novafw_icons_settings_field');
 	}
-	vc_add_shortcode_param( 'novafw_icons', 'novafw_icons_settings_field' );
 }
