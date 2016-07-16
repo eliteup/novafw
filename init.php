@@ -154,6 +154,7 @@ if (class_exists('WPBakeryVisualComposerAbstract')) {
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_icon_box_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_heading_box_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_effect_banner_block.php');
+	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_collection_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_video_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_video_background_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_instagram_block.php');
