@@ -42,7 +42,7 @@ function novafw_collection_banner_shortcode( $atts, $content = null ) {
 				<span class="description">
 				'.wpautop(htmlspecialchars_decode($content_collection)).'
 				</span>
-				<a href="'.$link.'" class="btn btn-md white btn-rounded">'.$link_title.'</a>
+				<a href="'.$link.'" class="btn white btn-rounded">'.$link_title.'</a>
 			</figcaption>
 			</div>
 	</figure>';
