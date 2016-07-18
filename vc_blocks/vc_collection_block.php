@@ -26,14 +26,21 @@ function novafw_collection_banner_shortcode( $atts, $content = null ) {
 	
 	if( 'standard' == $layout ){
 
-		$output = '<div class="eliteup-banner" style="margin-bottom:'.esc_attr($margin_bottom).'px; '.$height_style.'">
-                  '.$before.'
-                    <span class="banner_image" style="background-image: url('.$image_url.');"></span>
-                    <div class="figcaption">
-                      '.wpautop(htmlspecialchars_decode($content)).'
-                    </div>
-                  '.$after.'
-                </div>';
+		$output = '<figure class="collectionblock__feature">
+		<a class="collectionblock__link" href="#">
+			<span class="collectionblock--hoverstate" role="presentation"></span>
+			<picture class="collectionblock__image">
+				<img alt="'.$title.'" src="'.$image_url.'"/>
+			</picture>
+			<figcaption class="collectionblock__description">
+				<span class="collectionblock__description--hoverstate">
+				<h6 class="uppercase mb__24">'.$title.'</h6>
+				<h4 class="">'.$sub_title.'</h4>
+				</span>
+				'.wpautop(htmlspecialchars_decode($content)).'
+			</figcaption>
+			</a>
+	</figure>';
 	}
 	
 	return $output;
@@ -49,8 +56,8 @@ function novafw_collection_banner_shortcode_vc() {
 	vc_map( 
 		array(
 			"icon" => 'thebear-vc-block',
-			"name" => esc_html__("Effect Banner", 'thebear'),
-			"base" => "thebear_effect_banner",
+			"name" => esc_html__("Collection Block", 'thebear'),
+			"base" => "thebear_collection_banner",
 			"category" => esc_html__('Thebear WP Theme', 'thebear'),
 			"params" => array(
 				array(
