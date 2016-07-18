@@ -9,7 +9,8 @@ function novafw_collection_banner_shortcode( $atts, $content = null ) {
 			array(
 				'image' => '',
 				'title' => '',
-				'sub_title' => '30',
+				'sub_title' => '',
+				'content_collection' => '',
 				'layout' => 'standard',
 				'link' => '',
 				'link_title' => '',
@@ -27,19 +28,23 @@ function novafw_collection_banner_shortcode( $atts, $content = null ) {
 	if( 'standard' == $layout ){
 
 		$output = '<figure class="collectionblock__feature">
-		<a class="collectionblock__link" href="#">
+		<div class="collectionblock__link" href="#">
 			<span class="collectionblock--hoverstate" role="presentation"></span>
 			<picture class="collectionblock__image">
 				<img alt="'.$title.'" src="'.$image_url.'"/>
 			</picture>
 			<figcaption class="collectionblock__description">
 				<span class="collectionblock__description--hoverstate">
-				<h6 class="uppercase mb__24">'.$title.'</h6>
-				<h4 class="">'.$sub_title.'</h4>
+				<h6 class="uppercase mb__24">'.$sub_title.'</h6>
+				<h4 class="">'.$title.'</h4>
+
 				</span>
-				'.wpautop(htmlspecialchars_decode($content)).'
+				<span class="description">
+				'.wpautop(htmlspecialchars_decode($content_collection)).'
+				</span>
+				<a href="'.$link.'" class="btn btn-md white btn-rounded">'.$link_title.'</a>
 			</figcaption>
-			</a>
+			</div>
 	</figure>';
 	}
 	
@@ -78,7 +83,7 @@ function novafw_collection_banner_shortcode_vc() {
 				array(
 					"type" => "textarea_html",
 					"heading" => esc_html__("Banner Content", 'thebear'),
-					"param_name" => "content",
+					"param_name" => "content_collection",
 					'holder' => 'div'
 				),
 				array(
