@@ -140,17 +140,17 @@ if( '1' == $framework_options['mega_menu'] ){
  */
 if (class_exists('WPBakeryVisualComposerAbstract')) {
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_blog_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_portfolio_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_slider_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_video_slider_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_portfolio_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_slider_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_hero_video_slider_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_page_title_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_alert_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_skill_bar_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_feature_list_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_tabs_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_toggles_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_pricing_table_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_pricing_table_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_icon_box_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_heading_box_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_effect_banner_block.php');
@@ -158,17 +158,17 @@ if (class_exists('WPBakeryVisualComposerAbstract')) {
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_video_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_video_background_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_instagram_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_flickr_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_twitter_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_clients_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_flickr_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_twitter_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_clients_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_team_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_text_image_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_text_images_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_testimonials_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_title_card_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_resume_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_simple_social_icon_block.php');
-	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_masonry_services_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_resume_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_simple_social_icon_block.php');
+	//require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_masonry_services_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_menu_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_embed_block.php');
 	require_once(NOVAFW_FRAMEWORK_PATH . 'vc_blocks/vc_tour_date_block.php');
