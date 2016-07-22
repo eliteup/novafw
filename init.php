@@ -31,7 +31,7 @@ $framework_options = wp_parse_args( get_option('novafw_framework_options'), $def
 
 require_once( NOVAFW_FRAMEWORK_PATH . 'wp-less/lessc.inc.php' );
 require_once( NOVAFW_FRAMEWORK_PATH . 'wp-less/wp-less.php' );
-
+require_once( NOVAFW_FRAMEWORK_PATH . 'customizer-export-import/customizer-export-import.php' );
 if( '1' == $framework_options['aq_resizer'] ){
 	require_once( NOVAFW_FRAMEWORK_PATH . 'aq_resizer.php' );		
 }
